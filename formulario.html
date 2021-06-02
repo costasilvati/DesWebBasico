@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./css/base.css">
+  </head>
+  <body>
+    <main class="conteudo">
+      <h1 class="principal">Cadastro de usuários</h1>
+      <section class="formulario">
+        <form class="" action="sucesso.html" method="post">
+          <input type="text" name="nome" placeholder="Nome Completo" data-tipo="nome" required>
+          <input type="email" name="email" placeholder="E-mail" required>
+          <input type="date" id="nascimento" min="1901-01-01" data-tipo="nascimento" required>
+          <input type="text" name="cep" placeholder="CEP (somente números)"
+          pattern="[0-9]{8}" required>
+          <input type="text" name="logradouro" placeholder="Logradouro" required>
+          <input type="number" name="numero" placeholder="Número" required>
+          <input type="text" name="cidade" placeholder="Cidade" required>
+          <button class="botao" type="submit" name="cadastrar">Cadastrar</button>
+        </form>
+      </section>
+    </main>
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>
