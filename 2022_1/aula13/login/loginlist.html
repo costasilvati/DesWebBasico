@@ -18,28 +18,30 @@
     <title>Usuários - Finanças Pessoais</title>
     <!-- Custom styles for this template -->
     <link href="../css/base.css" rel="stylesheet" />
-    
   </head>
   <body>
     <div class="container">
-      <button class="w-100 btn btn-lg btn-primary"onclick="listar()"type="submit">
-        Listar Usuários
-      </button>
+      <h1 class="text-center">Logins cadastrados</h1>
+
       <main class="">
         <p id="resultado"></p>
-        <table class="table table-hover" id="tabela">
-          <thead>
-            <tr>
-              <th scope="col">Id</th>
-              <th scope="col">Email</th>
-              <th scope="col">Senha</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-          </tbody>
-        </table>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <table class="table table-hover" id="tabela">
+              <thead>
+                <tr>
+                  <th scope="col">Id</th>
+                  <th scope="col">Email</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
       </main>
     </div>
+    <script src="../js/main.js"></script>
   </body>
 </html>

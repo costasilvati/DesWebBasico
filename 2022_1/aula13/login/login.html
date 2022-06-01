@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <!-- Ícones Bootstrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <title>Finanças Pessoais</title>
-    <!-- Custom styles for this template -->
-    <link href="../css/signin.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <!-- Ícones Bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+  <title>Finanças Pessoais</title>
+  <!-- Custom styles for this template -->
+  <link href="../css/signin.css" rel="stylesheet" />
+  <!-- 
     <style>
         .bd-placeholder-img {
           font-size: 1.125rem;
@@ -25,64 +28,49 @@
           }
         }
       </style>
-      <script>
-      function retorno(conteudo){   
-        if (!("erro" in conteudo)) {
-          //Atualiza os campos com os valores.
-          document.getElementById('email').value=(conteudo.email);
-          document.getElementById('senha').value=(conteudo.senha);
-        }else {
-            //CEP não Encontrado.
-            //limpa_formulário();
-            alert("Usuário não encontrado.");
-        }
-      }
-
-      function buscar(){
-          //Cria um elemento javascript.
-          var script = document.createElement('script');
-          let id = Number(document.getElementById('id_login_pk').value)
-          //Sincroniza com o callback.
-          script.src = 'http://localhost:3000/login/'+id+'/?callback=retorno';
-          //Insere script no documento e carrega o conteúdo.
-          document.body.appendChild(script);
-        }
-
-      </script>
+      -->
 </head>
-<body class="text-center">
-    
-    <main class="form-signin">
-      <form method="get" action="index.html">
-        <i class="bi bi-file-person mb-4" width="72" heigth="57"></i>
-        <h1 class="h3 mb-3 fw-normal">Acesse sua conta.</h1>
-        <div class="form-floating">
-          <input type="number" class="form-control" id="id_login_pk" onblur="buscar()">
-          <label for="floatingInput">Código</label>
-        </div>
-        <div class="form-floating">
-          <input type="email" class="form-control" id="email" placeholder="name@exemplo.com">
-          <label for="floatingInput">Email</label>
-        </div>
-        <div class="form-floating">
-          <input type="password" class="form-control" id="senha" placeholder="Senha">
-          <label for="floatingPassword">Senha</label>
-        </div>
-    
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me"> Esqueci a senha
-          </label>
-        </div>
-        <!--
-        <button class="w-100 btn btn-lg btn-primary" onclick="cadastrar()" type="submit">Enviar</button>
-        <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
-        -->
-      </form>
-    </main>
-    
-    
-        
-      </body>
-    
+
+<body class="">
+  <script src="../js/post.js"></script>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <h1>Crie sua conta</h1>
+        <main class="form-control">
+          <form method="post" onsubmit="cadastrarUsuario()">
+            <!-- 
+            <i class="bi bi-file-person mb-4" width="72" heigth="57"></i>
+            <div class="form-floating">
+              <input type="number" class="form-control" id="id_login_pk" disabled />
+              <label for="floatingInput">Código</label>
+            </div>
+            -->
+            <div class="form-floating">
+              <input type="email" class="form-control" id="email" placeholder="name@exemplo.com" />
+              <label for="floatingInput">Email</label>
+            </div>
+            <p></p>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="senha" placeholder="Senha" />
+              <label for="floatingPassword">Senha</label>
+            </div>
+            <!--
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me"> Esqueci a senha
+                </label>
+              </div>
+            -->
+            <button class="w-50 btn btn-lg btn-primary" type="submit"> Enviar</button>
+            <!-- <p class="mt-5 mb-3 text-muted">&copy; 2022</p> -->
+          </form>
+        </main>
+      </div>
+    <div class="col-md-2"></div>
+  </div><!-- row -->
+  </div> <!-- container-->
+</body>
+
 </html>
