@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadatro de Usuário</title>
+</head>
+<body>
+    <script src="js/post.js"></script>
+    <h1>Cadastro de Usuários</h1>
+    <form method="post" onsubmit="cadastraUsuario()">
+        <label for="login">E-mail</label>
+        <input type="email" name="login" id="login"
+        placeholder="email@email.com" required>
+        <p></p>
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" required>
+        <p></p>
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>

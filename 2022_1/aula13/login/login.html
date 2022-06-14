@@ -12,23 +12,6 @@
   <title>Finanças Pessoais</title>
   <!-- Custom styles for this template -->
   <link href="../css/signin.css" rel="stylesheet" />
-  <!-- 
-    <style>
-        .bd-placeholder-img {
-          font-size: 1.125rem;
-          text-anchor: middle;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          user-select: none;
-        }
-  
-        @media (min-width: 768px) {
-          .bd-placeholder-img-lg {
-            font-size: 3.5rem;
-          }
-        }
-      </style>
-      -->
 </head>
 
 <body class="">
@@ -39,14 +22,7 @@
       <div class="col-md-8">
         <h1>Crie sua conta</h1>
         <main class="form-control">
-          <form method="post" onsubmit="cadastrarUsuario()">
-            <!-- 
-            <i class="bi bi-file-person mb-4" width="72" heigth="57"></i>
-            <div class="form-floating">
-              <input type="number" class="form-control" id="id_login_pk" disabled />
-              <label for="floatingInput">Código</label>
-            </div>
-            -->
+          <form method="post" onsubmit="cadastraUsuario()">
             <div class="form-floating">
               <input type="email" class="form-control" id="email" placeholder="name@exemplo.com" />
               <label for="floatingInput">Email</label>
@@ -56,15 +32,7 @@
               <input type="password" class="form-control" id="senha" placeholder="Senha" />
               <label for="floatingPassword">Senha</label>
             </div>
-            <!--
-              <div class="checkbox mb-3">
-                <label>
-                  <input type="checkbox" value="remember-me"> Esqueci a senha
-                </label>
-              </div>
-            -->
             <button class="w-50 btn btn-lg btn-primary" type="submit"> Enviar</button>
-            <!-- <p class="mt-5 mb-3 text-muted">&copy; 2022</p> -->
           </form>
         </main>
       </div>
