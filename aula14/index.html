@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEP</title>
+</head>
+<body>
+    <form action="." method="GET">
+        <label for="cep">CEP:
+        <input type="text" id="cep" value="" size="10" maxlength="9" 
+        onblur="pesquisacep(this.value);"/></label>
+        <br>
+        <label for="rua">Rua:
+            <input type="text" id="rua" size="60"/></label>
+        <br>
+        <label for="bairro">Bairro:
+            <input type="text" id="bairro" size="50"/></label>
+        <br>
+        <label for="cidade">Cidade:
+            <input type="text" id="cidade" size="40"/></label>
+        <br>
+        <label for="uf">Estado:
+            <input type="text" id="uf" size="30"/></label>
+        <br>
+    </form>
+    <script src="cep.js"></script>
+</body>
+</html>
