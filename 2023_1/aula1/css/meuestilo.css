@@ -1,0 +1,46 @@
+/* Seletor de elementos */
+h1{
+    color: darkslategray;
+}
+/*Seletor de classe */
+.titulo{
+    text-align: center;
+}
+/* Seletor de id */
+#numero{
+ font-size: 50px;
+ display: block;
+ margin: 5%;
+ width: 90%;
+ border-style: none;
+ border-bottom: ridge;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.page{
+    width: 60%;
+    padding: 20%;
+    background-color: lightgray;
+}
+
+.principal{
+    background-color: aliceblue;
+    padding: 5%;
+    border-radius: 5%;
+}
+
+button{
+    width: 60%;
+    align-content: center;
+    border: none;
+    background-color: cadetblue;
+    color: aliceblue;
+    font-size: large;
+    padding: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
