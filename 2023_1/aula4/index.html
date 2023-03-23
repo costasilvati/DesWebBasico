@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <div>
+        <h1>Introdução ao JavaScript</h1>
+        <div>
+            <h2>Ver data e hora</h2>
+            <p>Clique no botão para ver a data 
+                e a hora do sistema.</p>
+            <button 
+            onclick="document.getElementById('dh').innerHTML = Date()">
+                Veja a data e hora
+            </button>
+            <!-- P para exibir data e hora-->
+            <p id="dh"></p>
+        </div>
+        <div>
+            <h2>Transferir informação com JS</h2>
+            <p id="par1">
+                Este paragrafo será copiado para o paragrafo abaixo do botão
+            </p>
+            <button onclick="myFunction()">
+                Clique AQUI para copiar
+            </button>
+            <p id="par2"></p>
+        </div>
+        <div>
+            <h2>Editando o src de uma imagem</h2>
+            <p>Java Script pode editar a fonte de uma 
+                imagem.</p>
+            <button onclick="ligar()">Ligar</button>
+            <img id="lampada" src="https://www.w3schools.com/js/pic_bulboff.gif"
+             alt="Uma lampada apagada">
+            <button onclick="desligar()">Desligar</button>
+        </div>
+        <div>
+            <h2>Alterando estilo com JS</h2>
+
+            <p id="pStyle">Este parágrafo será alterado quando
+                o botão abaixo receber um clique
+            </p>
+            <button onclick="editStyle()" 
+            onmouseover="editDisplay()"
+            onmouseout="editDisplay2()">
+                Clique para editar o estilo do parágrafo
+            </button>
+        </div>
+        <div>
+            <h2>Janela de alerta</h2>
+            <p>Clique no botão para ver uma mensagem</p>
+            <button onclick="verJanela()">
+                Veja uma mensagem
+            </button>
+        </div>
+    </div>
+    <script>
+        function myFunction(){
+            var x = document.getElementById("par1").innerHTML;
+            document.getElementById("par2").innerHTML = x;
+        }
+
+        function ligar(){
+            document.getElementById("lampada").src = 
+            "https://www.w3schools.com/js/pic_bulbon.gif";
+        }
+
+        function desligar(){
+            document.getElementById("lampada").src = 
+            "https://www.w3schools.com/js/pic_bulboff.gif";
+        }
+        function editStyle(){
+            document.getElementById("pStyle").style.fontSize 
+            = '3em';
+        }
+        function editDisplay(){
+            document.getElementById("pStyle").style.display = 'none';
+        }
+
+        function editDisplay2(){
+            document.getElementById("pStyle").style.display = 'block';
+        }
+
+        function verJanela(){
+            window.alert("Esta é uma mensagem!")
+        }
+    </script>
+</body>
+</html>
