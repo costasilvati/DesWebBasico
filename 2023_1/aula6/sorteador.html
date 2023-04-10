@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <script src="sorteador.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row-cols-1">
+            <h1 class="display-4">
+                Sorteador de números aleatórios
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="min">Mínimo a ser sorteado</label>
+                <input id="min" type="number">
+                <p></p>
+                <label for="min">Maximo a ser sorteado</label>
+                <input id="max" type="number">
+                <p></p>
+                <button onclick="sortear()">
+                    Clique para sortear
+                </button>
+            </div>
+            <div class="col-md-6">
+                <h5>O valor sorteado é <span id="sorteado">?</span></h5>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+    <div>
+</body>
+</html>

@@ -1,4 +1,4 @@
-function imprimeTabuada(){
+ function imprimeTabuada(){
     let numero = document.getElementById('numero').value;
     let divisoria = document.getElementById("result");
     divisoria.innerHTML = `<p>A tabuada é ${numero}</p>`;
