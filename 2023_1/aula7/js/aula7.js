@@ -15,7 +15,8 @@ function getOption() {
 }
 
 function getCheckedBox(){
-    let checkBoxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    let checkBoxes = document.querySelectorAll(
+        'input[type="checkbox"]:checked');
     let text = "";
     for(i = 0; i < checkBoxes.length; i++) {
         text = `${text}, ${checkBoxes[i].value}`;
