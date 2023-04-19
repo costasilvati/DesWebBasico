@@ -1,0 +1,26 @@
+a:link{
+    color: rgb(4, 135 , 12 );
+}
+
+a:visited{
+    color: hotpink;
+}
+
+a:hover{
+    text-decoration:none;
+    background-color: aqua;
+}
+
+.outer{
+    border: solid black;
+}
+
+.box{
+    background-color: rebeccapurple;
+    color: white;
+    width: 20%; /* calc(80% - 30px); */
+    margin: 3%;
+    padding: 1%;
+    height: 55%;
+    transform: rotate(0.9turn);
+}
