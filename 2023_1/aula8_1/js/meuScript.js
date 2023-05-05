@@ -21,5 +21,8 @@ function getCheckBox(){
 function getOption(){
     let selectElement = document.querySelector("#select1");
     let output = selectElement.value;
-    document.querySelector(".output").textContent = output;
+    if(!output.localeCompare("Basic")){
+        document.querySelector(".output").textContent = output;
+    }
+    
 }
