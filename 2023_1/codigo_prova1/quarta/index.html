@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <script src="prova1.js"></script>
+    <title>Prova 1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row border text-center m-2 p-3">
+            <h1>Qual a operação</h1>
+        </div>
+        <div class="row m-2 border p-3">
+            <div class="col text-center">
+                <h3>Digite 3 valores e escolha 
+                    a opração a ser realizada com eles.
+                </h3>
+            </div>
+        </div>
+        <div class="row m-2 border p-3">
+            <div class="col-4 p-3">
+
+            </div>
+            <div class="col-4 p-1">
+                <p>Número 1
+                    <input id="n1" type="number">
+                </p>
+                <p>Número 2
+                    <input id="n2" type="number">
+                </p>
+                <p>Número 3
+                    <input id="n3" type="number">
+                </p>
+                <p>Soma ou Multiplicação?</p>
+                <p>
+                    Soma <input id="r1" name="sm" type="radio" value="+" checked>
+                    Multiplicação <input id="r2" name="sm" type="radio" value="*">
+                </p>
+                <p>
+                    <button onclick="calcular()">
+                        Veja o resultado
+                    </button>
+                </p>
+            </div>
+            <div class="col-4 p-3">
+                
+            </div>
+        </div>
+        <div class="row m-2 p-3 border">
+            <div class="col p-2">
+                <h4>Confira o Resultado</h4>
+                <p id="dica">Dica: ??</p>
+                <p id="resultado">Resultado: ??</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
