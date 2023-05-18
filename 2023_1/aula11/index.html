@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="aula10.js"></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <!-- 
+            Nome completo
+            email
+            senha
+            nascimento (mes/ ano)
+            UF
+        -->
+    <div id="formulario">
+        <div class="form-group row">
+            <label class="col-2 col-form-label" for="nome">Nome completo</label>  
+            <div class="col-10">
+                <input class="form-control" type="text" id="nome">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail</label>  
+            <input class="form-control" type="email" id="email">
+        </div>
+        <div class="form-group">
+            <label for="pass"> Senha</label> 
+            <input class="form-control" type="password" id="pass">
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="pass"> Nascimento</label> 
+                    <input class="form-control" type="date" id="nascimento">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="estado"> UF</label> 
+                    <select class="form-control" id="estado">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                    </select>
+                </div>
+            </div>
+    </div>
+        <button class="btn btn-primary" onclick="salvar2()">Salvar</button>
+    </div>
+    <div id="tabular">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Nascimento</th>
+                <th scope="col">UF</th>
+                <th scope="col">Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Juliana Costa</td>
+                <td>juliana.silva@up.edu.br</td>
+                <td>13/01/1988</td>
+                <td>PR</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    </div>
+</body>
+</html>
