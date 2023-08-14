@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- Comentário -->
+<html lang="pt-BR">
+<head> <!-- Não é renderizado -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2</title>
+</head>
+<body><!-- Conteúdo da página-->
+    <h1>Aula 2 - Tags HTML</h1>
+    <section id="listas">
+        <h2>Tags de Lista HTML </h2>
+        <h3>Listas ordenadas</h3> 
+        <!-- Ordered List -->
+        <ol>
+            <li>Banco de Dados</li>
+            <ul> <!-- Listas aninhadas-->
+                <li>Modelagem de dados</li>
+                <li>Entidade relacionamento</li>
+                <li>Cardinalidade</li>
+            </ul>
+            <li>Projeto Empreendedor</li>
+            <li>Des. Web Básico</li>
+            <li>Algoritmos</li> 
+        </ol>
+        <h3>Lista não ordenada</h3>
+        <!-- Unordered List  -->
+        <ul>
+            <li>Faltas</li>
+            <li>Notas</li>
+            <li>Aprendizado</li>
+        </ul>
+        <h3>Lista de definição</h3>
+        <!-- Definition List-->
+        <dl>
+            <dt>A.</dt><dd>Pastel</dd>
+            <dt>B.</dt><dd>Bolacha</dd>
+            <dt>C.</dt><dd>Pão de queijo</dd>
+        </dl>
+    </section>
+    <section>
+        <h2>Links (âncora)</h2>
+        <h3>Link para outra página</h3>
+        <a href="https://www.google.com" target="_blank">
+            CLIQUE AQUI para visitar o Google
+        </a>
+        <h3>Link para envio de e-mail</h3>
+        <a href="mailto:juliana.silva@up.edu.br" >
+            Envie um e-mail para a professora.
+        </a>
+        <h3>Link para um local da página</h3>
+        <p>Este link depende de um elemnto com o atributi id,
+            o link vaiser para o elemento com a id...</p>
+        <a href="#listas">
+            CLIQUE para acessar a seção de listas dessa página.
+        </a>
+        <h3>Link para outro arquivo HTML</h3>
+        <a href="page2.html" target="_blank">
+            Clique aqui para acessar page2.html
+        </a>
+    </section>
+    <section>
+        <h2>Tag de Imagem</h2>
+        <img 
+        src="img/minhaImagem.png"
+        alt="Descrição da tag html de imagem com detalhamento dos atributos" 
+        title="Images descritiva da TAG img"
+        >
+        <h3>Imagem como link</h3>
+        <a href="page2.html">
+            <img src="https://cdn-icons-png.flaticon.com/256/1073/1073462.png" 
+            alt="Ilustração de documento com tag HTML"
+            title="Tag HTML">
+        </a> 
+        <a href="#listas">Exemplo de link</a>
+         
+    </section>
+
+
+
+
+</body>
+</html>
