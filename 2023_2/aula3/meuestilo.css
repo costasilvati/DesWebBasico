@@ -1,0 +1,29 @@
+p {
+    font-size: large;
+}
+h1, h2, p{
+    text-align: center;
+    color: red;
+}
+
+h2{
+    color: blue;
+}
+
+/* Comentário CSS 
+Seletor de ID
+*/
+#intro{
+    background-color: gray;
+}
+/* Seletor de classe */
+.teste{
+    background-color: aqua;
+}
+li.teste{
+    color: chocolate;
+}
+
+.cores{
+    background-color: rgb(127, 127, 127);
+}

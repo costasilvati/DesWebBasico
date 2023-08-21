@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="meuestilo.css">
+    <title>Aula 3</title>
+</head>
+<body>
+    <style>
+        h1{
+            background-color: brown;
+        }
+    </style>
+    <header>
+        <h1>Introdução ao CSS</h1>
+        <nav>
+            <ul>
+                <li> <a href="#intro">Funcionamento CSS </a> </li>
+                <li> <a href="#seletores">Seletores CSS</a> </li>
+                <li> <a href="#cores">Cores em CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Funcionamento CSS</h2>
+            <p>Existem 3 formas de colocar estilo CSS na sua página</p>
+            <ol>
+                <li style="color:purple">Associar o estilo ao elemento HTML;</li>
+                <li>Seção de estilo com a tag style;</li>
+                <li>Associar um arquivo de extensão .css a página.
+                    Utilizando a tag link no head da página.
+                </li>
+            </ol>
+        </section>
+        <section id="seletores">
+            <h2 class="teste">Seletores CSS</h2>
+            <p>Existem 3 tipos de seletores no CSS, são eles:</p>
+            <ol>
+                <li>Seletores de elemento: onde você apenas usa o 
+                    nome da tag que quer formatar;
+                </li>
+                <li>Seletor de ID: escrito com # e o id;</li>
+                <li class="teste">Seletor de classe: utilizado para aplicar estilo
+                    em elementos diversos, usa-se: .nome_da_classe;
+                </li>
+            </ol>
+        </section>
+        <section id="cores">
+            <h2>Cores em CSS</h2>
+            <p>As cores podem ser definidas utilizando o formato RGB (red - green - blue).
+                Neste formato a intensidade de cada cor tem a intensidade 
+                definida entre 0 e 255. Onde 0 é 0%, e 255 é 100%.
+            </p>
+            <p class="cores">Exemplo color: rgb(0,255,0) Cor verde em 100%</p>
+        </section>
+    </main>
+</body>
+</html>
