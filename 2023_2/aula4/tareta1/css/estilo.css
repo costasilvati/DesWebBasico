@@ -1,0 +1,22 @@
+ul{
+    width: 20%;
+    font-size: large;
+}
+
+li{
+    background-color: #CCCCCC;
+    border: solid;
+    list-style: none;
+    text-align: center;
+    padding: 3%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li:hover{
+    background-color: #00FF00;
+    color: white;
+}

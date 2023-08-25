@@ -1,0 +1,37 @@
+div{
+    padding: 6%;
+    background-color: rgba(238,135,160,0.6);/*#FE7BE5; */
+}
+
+section{
+    padding: 2%;
+    border-color: #504099;
+    border-style: dotted;
+}
+
+h1{
+    margin: 10%;
+}
+
+li{
+    list-style: none;
+    display: inline;
+    padding: 2%;
+    background-color: #504099;
+    color: white;
+    border: solid;
+}
+
+a{
+    text-decoration: none;
+}
+
+li:hover{
+    background-color: #313866;
+}
+/* Estilizando imagem de fundo
+body{
+    background-image: url("https://cdn-images-1.medium.com/v2/resize:fit:1200/1*M5_tkXQvnfHBF6CD88jp0w.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}*/
