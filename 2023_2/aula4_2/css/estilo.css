@@ -1,0 +1,46 @@
+body{
+    background-color: #EDEDE9;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9d8189;
+}
+/* Seletor de classe */
+.bordascss{
+    border-style: solid;
+    border-color: #f4acb7;
+}
+
+.espacopar{
+    padding: 3%;
+    margin: 3%;
+}
+/* Seletor de ID */
+#container{
+    margin: 3%;
+    background-color: #f5ebe0;
+    padding: 2%;
+}
+
+.bordadot{
+    border-style: dotted;
+    border-color: #f4acb7;
+    border-width: 0.5em;
+}
+
+.menuitem{
+    list-style: none;
+    border-left: white;
+    display: inline;
+    background-color: #d5bdaf;
+    padding: 2%;
+    margin: 1%;
+}
+
+a{
+    text-decoration: none;
+    border-color: coral;
+}
+
+li:hover{
+    background-color: aliceblue;
+    color: #9d8189;
+}
