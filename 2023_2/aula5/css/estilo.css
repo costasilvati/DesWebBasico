@@ -1,0 +1,42 @@
+body{
+    font-family: cursive;
+    background-color: #d5def5;
+    color: #430f58;
+}
+
+.nome{
+    text-align: center;
+    font-size:xx-large;
+}
+
+/* https://www.w3schools.com/css/css_margin.asp */
+.headernome{
+    margin: 10% 10% 15% 10%;
+}
+
+section{
+    margin-top: 0%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    margin-left: 15%;
+}
+
+.listmenu{
+    list-style: none;
+    display: inline;
+    padding: 2%;
+    border: solid;
+    border-color: #430f58;
+}
+
+.linkmenu{
+    text-decoration: none;
+}
+.listmenu:hover{
+    background-color: white;
+    border: none;
+}
+
+#formacao{
+    background-color: #a393eb;
+}

@@ -1,0 +1,57 @@
+/* Reset de estilos para remover margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #f5f5f5;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Estilo para o menu de navegação */
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilo para as seções */
+section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    margin-top: 60px;
+}
+
+/* Estilo para o título do nome */
+h1 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+/* Estilo para os títulos das seções */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o texto das seções */
+p {
+    font-size: 18px;
+}

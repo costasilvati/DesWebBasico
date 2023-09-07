@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo de Juliana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #menu {
+            background-color: #336699;
+            width: 200px;
+            height: 100vh;
+            padding: 20px;
+            color: white;
+        }
+
+        #menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #menu li {
+            margin-bottom: 10px;
+        }
+
+        #menu a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #conteudo {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-top: 30px;
+        }
+
+        .secao {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+        }
+
+        .formacao {
+            background-color: #66cc99;
+        }
+
+        .experiencia {
+            background-color: #ff9966;
+        }
+
+        .hobbies {
+            background-color: #9966cc;
+        }
+
+        .contatos {
+            background-color: #ff66cc;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#formacao">Formação Acadêmica</a></li>
+                <li><a href="#experiencia">Experiência Profissional</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </div>
+        <div id="conteudo">
+            <h1>Juliana</h1>
+            <div class="secao formacao" id="formacao">
+                <h2>Formação Acadêmica</h2>
+                <p>Insira detalhes sobre sua formação acadêmica aqui.</p>
+            </div>
+            <div class="secao experiencia" id="experiencia">
+                <h2>Experiência Profissional</h2>
+                <p>Descreva sua experiência profissional nesta seção.</p>
+            </div>
+            <div class="secao hobbies" id="hobbies">
+                <h2>Hobbies</h2>
+                <p>Liste seus hobbies e interesses aqui.</p>
+            </div>
+            <div class="secao contatos" id="contatos">
+                <h2>Contatos</h2>
+                <p>Forneça informações de contato, como e-mail e telefone.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
