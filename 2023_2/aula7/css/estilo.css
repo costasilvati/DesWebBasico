@@ -1,0 +1,73 @@
+/*
+https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form
+*/
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 50%;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+
+  form{
+    margin-top: 1em;
+  }
+  
+  p {
+    width: 40%;
+    text-align: right;
+  }
+
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 40%;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1% solid #999;
+    text-align: left;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding: 2%; /* same size as the label elements */
+    text-align: center;
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+  }
+
+  input{
+    padding: 2%;
+    margin: 2%;
+  }
+
+  .radio{
+    padding: 0%;
+  }
+  

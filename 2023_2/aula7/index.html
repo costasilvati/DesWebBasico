@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo2.css">
+    <title>Formularios HTML</title>
+</head>
+<body>
+    <div>
+        <h1 class="titulos">Formulários HTML</h1>
+
+        <h2 class="titulos">Cadastro de Usuários</h2>
+        <form action=""><!-- campos de Formulário dentro do form-->
+            <div>
+                <label class="labeltexto" for="nome">Nome:</label>
+                <input class="inputexto" name="nome" type="text" min="7" max="10" placeholder="Nome Completo" required>
+            </div>
+            <div>
+                <label class="labeltexto" for="cpf">CPF:</label>
+                <!-- pattern usa expressão regular--> 
+                <input class="inputexto" type="text" placeholder="000.000.000-00"> 
+            </div>
+            <div>
+                <label class="labeltexto" for="dn">Data de Nascimento:</label>
+                <input class="inputexto" name="dn" type="date">
+            </div>
+            <div>
+                <label class="labeltexto" for="email">E-mail:</label>
+                <input class="inputexto" name="email" type="email" placeholder="email@email.com">
+            </div>
+            <div>
+                <label class="labeltexto" for="tel">Telefone:</label>
+                <input class="inputexto" name="tel" type="tel" placeholder="(00)00000-0000">
+            </div>
+            <div>
+                <p>Gênero</p> <!-- Name define grupo e bloqueia varias seleções-->
+                <label for="genero">Feminino</label>
+                <input class="radio" name="genero" type="radio" required>
+                <label for="genero">Masculino</label>
+                <input class="radio" name="genero" type="radio">
+                <label for="genero">Outros</label>
+                <input class="radio" name="genero" type="radio">
+            </div>
+            <div>
+                <label class="labeltexto" for="cep">CEP:</label>
+                <input class="inputexto" type="text" name="cep" placeholder="00000-000">
+            </div>
+            <div>
+                <label class="labeltexto" for="num">Número:</label>
+                <input class="inputexto" name="num" type="number" min="0">
+            </div>
+            <div>
+                <label class="labeltexto" for="compl">Complemento</label>
+                <input class="inputexto" name="compl" type="text" placeholder="Apt: XX Bloco: XX">
+            </div>
+            <div>
+                <input class="button" type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
