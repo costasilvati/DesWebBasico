@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    /*flex-wrap: wrap-reverse;*/
+    justify-content: space-evenly;
+}
+
+.item{
+    border: solid;
+    /*width: 40%;*/
+}
+

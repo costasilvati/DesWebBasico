@@ -8,7 +8,7 @@
 </head>
 <body>
     <div>
-        <div>
+        <div class="titulo">
             <h1>Cadastro de Pizza</h1>
             <h4>Defina a receita da sua pizza.</h4>
         </div>
@@ -16,7 +16,7 @@
             <form>
                 <div>
                     <label for="nome">Nome da pizza</label>
-                    <input name="nome" type="text">
+                    <input name="nome" type="text" required>
                 </div>
                 <div>
                     <h4>Tipo de massa</h4>
@@ -36,7 +36,33 @@
                     <input name="borda" type="radio">
                     <label for="borda">Não</label>
                 </div>
-                
+                <div>
+                    <h4>Ingrdientes</h4>
+                    <p>
+                        <input type="text" placeholder="Nome do ingrdiente">
+                        <label for="qtd">Quantidade</label>
+                        <input name="qtd" type="number">gr
+                    </p>
+                    <p>
+                        <input type="text" placeholder="Nome do ingrdiente">
+                        <label for="qtd2">Quantidade</label>
+                        <input name="qtd2" type="number"> gr
+                    </p>
+                </div>
+                <div>
+                    <h4>Tamanhos disponíveis</h4>
+                    <input name="p" type="checkbox">
+                    <label for="p">Pequena</label>
+                    <input name="m" type="checkbox">
+                    <label for="m">Média</label>
+                    <input name="g" type="checkbox">
+                    <label for="g">Grande</label>
+                    <input name="xg" type="checkbox" >
+                    <label for="xg">Big</label>
+                </div>
+                <div class="botao">
+                    <input type="submit" value="Salvar">
+                </div>
             </form>
         </div>
     </div>
