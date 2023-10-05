@@ -5,12 +5,14 @@ body{
 .linha{
     border: dotted #CCCCCC;
     padding: 1%;
+    margin: 1%;
 }
 .titulo{
     text-align: center;
 }
 .container{
     display: flex;
+    justify-content: center;
     margin: 1%;
     border: dotted #CCCCCC;
 }

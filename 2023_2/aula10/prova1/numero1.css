@@ -1,0 +1,26 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    border: solid #CCCCCC;
+    margin: 1%;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.campos{
+    border: none;
+}
+
+.botao:hover{
+    background-color: #22FF00;
+    color: white;
+}
