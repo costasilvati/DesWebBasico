@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/meuscript.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 p-3 border">
+                <h1> Primeiro JavaScript (JS)</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 bg-light">
+                <ul>
+                    <li class="p-2"><a href="#getElement">getElementById</a></li>
+                    <li class="p-2"><a href="#conteudo">Editando conteúdo com JS</a></li>
+                    <li class="p-2"><a href="#source">Editando SRC de imagem</a></li>
+                    <li class="p-2"><a href="#estilo">Editando o CSS de elementos com JS</a></li>
+                    <li class="p-2"><a href="#window">Janelas em JS</a> </li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <section id="getElement">
+                        <h2>Meu primeiro Javascript</h2>
+                        <button onmouseover=
+                        "document.getElementById('demo').innerHTML = Date()"
+                        onmouseout="document.getElementById('demo').innerHTML = ''">
+                            Passe o mouse aqui
+                        </button>
+                        <p id="demo"></p>
+                    </section>
+                    <section id="conteudo">
+                        <h2>Copiando o conteúdo de um elemento</h2>
+                        <p id="p1">
+                            Este texto será copiado para outro local 
+                            da página.
+                        </p>
+                        <button onclick="copiarTexto()">
+                            Clique aqui para copiar o conteúdo 
+                            do parágrafo acima.
+                        </button>
+                        <p>
+                            <span id="p2"></span>
+                        </p>
+                    </section>
+                    <section id="source">
+                        <h2>Editando src de imagem (img)</h2>
+                        <p>É possível editar o src de uma imagem com JS</p>
+                        <button onclick="ligar()">
+                            ON
+                        </button>
+                        <img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif" 
+                        alt="imagem de lâmpada">
+                        <button onclick="desligar()">
+                            OFF
+                        </button>
+                    </section>
+                    <section class="bg-dark text-white mt-2" id="estilo">
+                        <h2>Editando o estilo de elementos com JS</h2>
+                        <p id="paragrafo">
+                            Este texto terá seu estilo editado pelo botão abaixo
+                        </p>
+                        <button onclick="estilizar()">
+                            Editar o estilo
+                        </button>
+                        <button  onclick="ocultar()">
+                            Ocultar o texto
+                        </button>
+                    </section>
+                    <section id="window">
+                        <h2>Exibindo Janelas</h2>
+                        <p>É possível exibir janelas com JS</p>
+                        <button onclick="exibirJanela()">
+                            Veja uma janela em JS
+                        </button>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
