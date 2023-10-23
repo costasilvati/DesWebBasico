@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="meuscript.js"></script>
+    <title>Javascript</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row border">
+            <div class="col text-center mt-3 mb-3">
+                <h1>Javascript 1</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 border p-2">
+                <h3 class="mb-2">Índice</h3>
+                <ul>
+                    <li class="mb-2">
+                        <a href="#getel">getElementById </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#getValue">Capturar valor de elemento</a>
+                    </li>
+                    <li>
+                        <a href="#editEstilo">Editando CSS com JS</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-10 border"> 
+                <section id="getel" class="p-3 mb-4">
+                    <h3>Exibindo a data ao passar o mouse</h3>
+                    <p>Vamos utilizar o método javascript getElementById</p>
+                    
+                    <button class="btn btn-primary" 
+                    onmouseover="exibeData()"
+                    onmouseout="removeData()">
+                        Passe o mouse para ver a data
+                    </button>
+                    
+                    <p id="par1"></p>
+                </section>
+                <section id="getValue" class="p-3 mb-4">
+                    <h3>Capturar valor de elemento html</h3>
+                    <p id="original">Este valor será copiado!</p>
+                    <button class="btn btn-info" onclick="copiarTexto()">
+                        Clique aqui para copiar o texto
+                    </button>
+                    <h4 id="copia"></h4>
+                    <!-- input-->
+                    <h3>Capturar valor de input </h3>
+                    <label class="form-label" for="nome">Nome Completo</label>
+                    <input class="form-control m-2" type="text" id="nome">
+                    <button class="btn btn-primary m-1" onclick="copiarInput()">
+                        Copiar texto da input
+                    </button>
+                </section>
+                <section id="editEstilo">
+                    <h3>Editando CSS e source com Javascript</h3>
+                    
+                    <button class="btn btn-success" onclick="ligar()">
+                        ON
+                    </button>
+                    
+                    <img id="lampada" src="https://www.w3schools.com/js/pic_bulboff.gif" 
+                        alt="uma lampada">
+
+                    <button class="btn btn-danger" onclick="desligar()">
+                        OFF
+                    </button>
+
+                    <h3>Editando estilo</h3>
+                    <p id="par2">Este parágrafo terá seu estilo alterado!</p>
+                    <button class="btn btn-secondary" onclick="mudarEstilo()">
+                        Mude o estilo do paragrafo
+                    </button>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
