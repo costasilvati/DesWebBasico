@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="js/meuscript.js"></script>
+    <title>aula 13</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 bg-light text-center p-4 mt-2 mb-3">
+                <h1>Formulário em Javascript</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 p-2">
+                <p>Selecione o gênero e clique em enviar</p>
+                <div class="form-check">
+                    <input type="radio"  class="form-check-input" value="F" name="gender" checked>
+                    <label for="gender" class="form-check-label">Feminino</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio"  class="form-check-input" value="M" name="gender">
+                    <label for="gender" class="form-check-label">Masculino</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio"  class="form-check-input" value="O" name="gender">
+                    <label for="gender" class="form-check-label">Outro</label>
+                </div>
+                <p id="result"></p>
+                <button class="btn btn-primary" onclick="displayRadioValue()">
+                    Enviar
+                </button>
+            </div>
+        </div>
+        <div class="row bg-secondary">
+            <div class="col-md-6 p-4 text-white">
+                <p>Selecione o plano desejado:</p>
+                <select class="form-select mb-2" id="select1">
+                    <option value="Free">Free</option>
+                    <option value="Basic">Basic</option>
+                    <option value="Premium">Premium</option>
+                </select>
+                <button class="btn btn-light" onclick="getOption()">
+                    Selecionar Plano
+                </button>
+            </div>
+            <div class="col-md-6 p-3 text-white">
+                <p> O valor selecionado é 
+                    <span class="output"></span>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 p-3">
+                <p>Quais são suas prioridades?</p>
+                <div class="form-check">
+                    <input type="checkbox" name="work" value="Trabalho" id="w">
+                    <label for="work" class="form-check-label">
+                        Trabalho
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" name="study" value="Estudos" id="s">
+                    <label for="study" class="form-check-label">
+                        Estudos
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" name="health" value="Saúde" id="h">
+                    <label for="health" class="form-check-label">
+                        Saúde
+                    </label>
+                </div>
+                <button class="btn btn-danger" onclick="getCheckedBox()">
+                    Enviar seleção
+                </button>
+                <p>Suas prioridades são: <span id="pri">...</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
