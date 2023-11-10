@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="numero.css">
+    <title>Prova 1</title>
+</head>
+<body>
+        <div class="linha">
+            <h1 class="titulo">Qual a operação</h1>
+        </div>
+        <div class="linha">
+            <div class="col text-center">
+                <h3 class="titulo">Digite 3 valores e escolha 
+                    a opração a ser realizada com eles.
+                </h3>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <!-- div vazia-->
+            </div>
+            
+            <div>
+                <form>
+                    <p><label for="n1">Número 1</label>
+                        <input id="n1" type="number" max="100">
+                    </p>
+                    <p><label for="n2">Número 2</label>
+                        <input id="n2" type="number" max="100">
+                    </p>
+                    <p><label for="n3">Número 3</label>
+                        <input id="n3" type="number" max="100">
+                    </p>
+                    <p>Soma ou Multiplicação?</p>
+                    <p>
+                        Soma <input id="r1" name="sm" type="radio" value="+" checked>
+                        Multiplicação <input id="r2" name="sm" type="radio" value="*">
+                    </p>
+                    <p>
+                        <input class="botao" type="submit" value="Veja o resultado">
+                    </p>
+                </form>
+            </div>
+            <div>
+                <!-- div vazia-->
+            </div>
+        </div>
+        <div class="linha">
+            <div class="col p-2">
+                <h4>Confira o Resultado</h4>
+                <p id="dica">Dica: ??</p>
+                <p id="resultado">Resultado: ??</p>
+            </div>
+        </div>
+</body>
+</html>
