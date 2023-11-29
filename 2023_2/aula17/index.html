@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Revisão</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center p-3">
+                <h1>Revisão bim2</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <!-- <form> -->
+                    <div>
+                        <label for="nome" class="form-label">
+                            Nome Completo
+                        </label>
+                        <input type="text" class="form-control" id="nome">
+                    </div>
+                    <div>
+                        <p>Estilo musical</p>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" 
+                                                              id="rock" value="rock">
+                            <label for="rock" class="form-check-label">Rock</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" 
+                                                              id="samba" value="samba">
+                            <label for="samba" class="form-check-label">Samba</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" 
+                                                              id="sertanejo" value="sertanejo">
+                            <label for="sertanejo" class="form-check-label">Sertanejo</label>
+                        </div>
+                        <div>
+                            <label for="time">Time do coração</label>
+                            <select class="form-select" id="time">
+                                <option value="Brasil">Brasil</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="EUA">EUA</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="cor">Cor favorita</label>
+                            <select class="form-select" id="cor">
+                                <option value="blue">Azul</option>
+                                <option value="green">Verde</option>
+                                <option value="yellow">Amarelo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3" onclick="salvar()">Salvar</button>
+                <!--</form> -->
+            </div>
+            <div class="col-4 bg-light p-3">
+                <p id="resposta">...</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/meuscript.js">
+        
+    </script>
+</body>
+</html>
