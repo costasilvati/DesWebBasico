@@ -1,0 +1,34 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.linha{
+    border: dotted #CCCCCC;
+    padding: 1%;
+    margin: 1%;
+}
+.titulo{
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+    border: dotted #CCCCCC;
+}
+.texto{
+    width: 50%;
+    padding: 3%;
+}
+.campos{
+    padding: 3%;
+    width: 50%;
+}
+
+.botao{
+    padding: 0.2em;
+}
+.botao:hover{
+    background-color: #22AAFF;
+    color: white;
+}
