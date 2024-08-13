@@ -1,0 +1,24 @@
+/* Seletores de elementos */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: bisque;
+    color: brown;
+}
+
+h1{
+    color: orange;
+}
+
+/* Seletor de ID */
+#div{
+    background-color: cadetblue;
+}
+
+#main{
+    background-color: beige;
+}
+
+/* Seletor de classe */
+.roxo{
+    color:blueviolet;
+}
