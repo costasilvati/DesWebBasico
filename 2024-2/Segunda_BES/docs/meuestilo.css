@@ -1,0 +1,11 @@
+/* Seletor de elemento */
+body{
+    background-color:#EBABF8;
+}
+
+div{
+    /*border: 10px;*/
+    /*border-style: double;*/
+    border-bottom: 1px solid;
+    margin: 3%;
+}

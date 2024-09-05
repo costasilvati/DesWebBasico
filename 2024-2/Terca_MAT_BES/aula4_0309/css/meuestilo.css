@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(213, 226, 249);
+}
+
+table, td, th{
+    border: 1px solid orangered; /* short hand borda */
+    border-collapse: collapse;
+}
+
+footer{
+    margin-top: 3%;
+    text-align: center;
+}
+
+td:hover{
+    background-color: blue;
+    color: white;
+}
+
+.outer{
+    border: 5px solid red;
+}
+
+.box{
+    margin: 3%;
+    /*width: calc(90% - 100px);*/
+    width: 50%;
+    height: 55%;
+    color: white;
+    background-color: blueviolet;
+    transform: rotate(0.9turn);
+    padding: 1%;
+}
+
+@media(max-width:30em){
+    body{
+        background-color: black;
+    }
+}

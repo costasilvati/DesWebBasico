@@ -1,0 +1,22 @@
+body{
+    background-color: bisque;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+th, td {
+    border-bottom: solid;
+    border-left: solid;
+    /*border: solid,0px, 10px, 0px, 10px;*/
+}
+
+td:hover{
+    background-color: blue;
+    color: white;
+}
+
+
