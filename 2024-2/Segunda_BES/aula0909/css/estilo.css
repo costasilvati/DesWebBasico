@@ -1,0 +1,19 @@
+body{
+    background-color: #B5BFFF;
+}
+
+.formulario{
+    width: 70%;
+    margin: 0 auto;
+    background-color: #FFEEB5;
+    padding: 3%;
+}
+
+input, textarea{
+    margin-bottom: 2%;
+    border-radius: 3px;
+}
+.inputs{
+    display: block;
+    width: 100%;
+}

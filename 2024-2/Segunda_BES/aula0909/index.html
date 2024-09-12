@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Aula 09-09</title>
+</head>
+<body>
+    <div>
+        <h1>Formulario e CSS flex</h1>
+    </div>
+    <div class="formulario">
+        <form action="#" method="get">
+            <div>
+                <label for="c">Digite seu comentário</label>
+                <textarea class="inputs" name="comment" id="c" cols="30" rows="10" placeholder="Um">
+                </textarea>
+            </div>
+            <div>
+                <label for="nome">Nome Completo*:</label>
+                <input class="inputs" type="text" id="nome" placeholder="Nome Comepleto" required>
+            </div>
+            <div>
+                <label for="mail">E-mail*</label>
+                <input class="inputs" type="email" id="mail" placeholder="email@email.com" required>
+            </div>
+            <div>
+                <label for="nasc">Data de Nascimento</label>
+                <input class="inputs" type="date" name="nascimento" id="nasc">
+            </div>
+            <div>
+                <label for="senha">Senha</label>
+                <input class="inputs" type="password" id="senha" name="sen" required>
+            </div>
+            <div>
+                <label for="salario">Salário</label>
+                <input class="inputs" type="number" name="sal" id="salario" step="2">
+            </div>
+            <div>
+                <label for="fone">Telefone</label>
+                <input class="inputs" type="tel" name="fon" id="fone">
+            </div>
+            <div>
+                <p>Operação (Radio)</p>
+                <!-- Radio
+                Para permitir apenas uma seleção todos os input radio
+                devem ter o mesmo name. 
+                -->
+                <label for="op1">Soma (+)</label>
+                <input type="radio" name="op" id="op1" value="+">
+                <label for="op2">Subtração ( - )</label>
+                <input type="radio" name="op" id="op2" value="-">
+                <label for="op3">Multiplicação</label>
+                <input type="radio" name="op" id="op3" value="*">
+            </div>
+             <div><!-- Check box-->
+                <p>Preferência musical</p>
+                <label for="rock">Rock</label>
+                <input type="checkbox" name="r" id="rock" value="Rock">
+
+                <label for="pop">Pop</label>
+                <input type="checkbox" name="p" id="pop" value="POP">
+
+                <label for="pagode">Pagode</label>
+                <input type="checkbox" name="pag" id="pagode" value="Pagode">
+
+                <label for="rap">RAP</label>
+                <input type="checkbox" name="ra" id="rap" value="RAP">
+             </div>
+             <input type="submit" value="Enviar">
+        </form>
+    </div>
+    
+</body>
+</html>
