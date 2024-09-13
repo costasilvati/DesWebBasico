@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Formulários</title>
+</head>
+<body>
+    <div>
+        <h1>Formulários HTML</h1>
+    </div>
+    <div class="beleza">
+        <form action="#" method="post">
+            <div>
+                <label for="comment">Comentário</label>
+                <textarea class="quebralinha" cols="50" rows="10" name="comentario" id="comment">
+                </textarea>
+            </div>
+            <div>
+                <label for="n">Nome Completo*</label>
+                <input class="quebralinha" type="text" placeholder="Maria da Silva" name="nome" id="n" required>
+            </div>
+            <div>
+                <label for="qtd">Quantidade</label>
+                <input class="quebralinha" type="number" name="quantidade" id="qtd" min="1" max="10">
+            </div>
+            <div>
+                <label for="mail">E-mail</label>
+                <input class="quebralinha" type="email" name="e-mail" id="mail">
+            </div>
+            <div>
+                <label for="nasc">Nascimento</label>
+                <input class="quebralinha" type="date" name="nascimento" id="nasc">
+                <!--Como definir min max?-->
+            </div>
+            <div>
+                <label for="sn">Senha</label>
+                <input class="quebralinha" type="password" name="senha" id="sn">
+            </div>
+            <div>
+                <p>Você é feliz?</p>
+                <input type="radio" name="feliz" id="y" checked>
+                <label for="y">Sim</label>
+                <input type="radio" name="feliz" id="not">
+                <label for="not">Não</label>
+            </div>
+            <div>
+                <p>O que te faz feliz?</p>
+                <input type="checkbox" value="dinheiro" name="din" id="money">
+                <label for="money">Dinheiro</label>
+                <input type="checkbox" value="família" name="family" id="fam">
+                <label for="fam">Família</label>
+                <input type="checkbox" value="amor" name="love" id="amor">
+                <label for="amor">Amor</label>
+                <input type="checkbox" value="férias" name="ferias" id="vac">
+                <label for="vac">Férias</label>
+            </div>
+            <div>
+                <label for="c">Graduação</label>
+                <select class="quebralinha" name="curso" id="c">
+                    <option disabled selected></option>
+                    <option value="ADS">Análise Des. Sistemas</option>
+                    <option value="BES">Eng. de Software</option>
+                    <option value="BM">Biomedicina</option>
+                    <option value="FISIO">Fisioterapia</option>
+                </select>
+            </div>
+            <!-- Botão para enviar o formulário-->
+             <input type="submit" value="Salvar">
+        </form>
+    </div>
+</body>
+</html>
