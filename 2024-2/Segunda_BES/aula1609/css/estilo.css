@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/* Seletor de elementos */
+i{
+    font-size: xx-large;
+}
+.container{
+    display: flex;
+    flex-direction: column-reverse;
+    /*
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    bootstrap icons: https://icons.getbootstrap.com/
+    */
+}
+
+.item{
+    border: solid;
+    width: 30%;
+}

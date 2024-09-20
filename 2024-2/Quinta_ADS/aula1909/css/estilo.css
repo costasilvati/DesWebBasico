@@ -1,0 +1,18 @@
+/* Seletor de elementos */
+i{
+    font-size: 100px;
+}
+/* Seletor de classe */
+.container{
+    display: flex;
+    justify-content: flex-end;
+    /*
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    */
+}
+
+.item{
+    border: solid;
+    width: 30%;
+}

@@ -1,0 +1,22 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    /*
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    */
+}
+
+.item{
+    border: solid;
+    width: 30%; 
+}
+
+.icon-network{
+    font-size: xx-large;
+}
