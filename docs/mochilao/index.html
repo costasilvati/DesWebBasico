@@ -71,8 +71,10 @@
             const resultDiv = document.getElementById('result');
             const passDiv = document.getElementById('pass');
             if (correctCount >= 3) {
+                let passList = ['240310', '565924', '212287', '765432'];
+                let valorAleatorio = passList[Math.floor(Math.random() * passList.length)];
                 resultDiv.innerHTML = '<div class="alert alert-success">Parabéns! Você acertou no mínimo 3 desafios.</div>';
-                passDiv.innerHTML = '<div class="alert alert-warning">A senha para o próximo desafio é: UP_MOCHILAO.</div>';
+                passDiv.innerHTML = '<div class="alert alert-warning">A senha para o próximo desafio é: '+ valorAleatorio+'.</div>';
             } else {
                 resultDiv.innerHTML = '<div class="alert alert-danger">Você não acertou o mínimo de 3 desafios. Tente novamente! </div> <br><button type="button" class="btn btn-primary" onclick="recarregar()">Jogar novamente</button>';
                 
