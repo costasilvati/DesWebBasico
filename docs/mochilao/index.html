@@ -88,6 +88,14 @@
         }
 
         function limpar(){
+            const answers = {
+                q1: '9',
+                q2: '128',
+                q3: '49',
+                q4: '100',
+                q5: '13',
+                q6: '200'
+            };
             let correctCount = 0;
             for (let key in answers) {
                 document.getElementById(key).innerHTML = '';
