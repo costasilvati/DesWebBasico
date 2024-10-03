@@ -84,6 +84,13 @@
         function recarregar(){
             location.reload();
         }
+
+        function limpar(){
+            let correctCount = 0;
+            for (let key in answers) {
+                document.getElementById(key).innerHTML = '';
+            }
+        }
     </script>
 </body>
 </html>
