@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"><!--Coluna do menu-->
+                <div>
+                    <h1>Inrodução ao JavaScript</h1>
+                </div>
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#sec1">First javascript</a>
+                    </div>
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#sec2">
+                            Reaction Javascript
+                        </a>
+                    </div>
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#sec3">
+                            Editar SRC de uma img
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-md-9"><!-- Coluna de seções-->
+                <div class="row p-3 mt-2" id="sec1">
+                    <div class="col-md p-3">
+                        <h2>Primeiro javascript</h2>
+                        <!-- Botão que reage ao passar do mouse-->
+                        <button type="button" onmouseover="document.getElementById('js1').innerHTML = Date()">
+                            Clique aqui para ver o horário atual
+                        </button>
+                        <!-- paragrafo que exibe a hora-->
+                        <p id="js1"></p>
+                    </div>
+                    <div class="col-md p-3">
+                        <h2>Segundo javascript</h2>
+                        <!-- Botão que reage ao passar do mouse-->
+                        <button type="button" onmouseover="document.getElementById('js2').innerHTML = Date()"
+                            onmouseout="document.getElementById('js2').innerHTML = ''">
+                            Clique aqui para ver o horário atual
+                        </button>
+                        <!-- paragrafo que exibe a hora-->
+                        <p id="js2"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <h2>Usando funções JavaScript (JS)</h2>
+                        <p id="p1">Este parágrafo será copiado ao clicar do botão
+                            pela função copiar() que foi declarada na tag script;
+                        </p>
+                        <button type="button" class="btn btn-success" onclick="copiar()">
+                            Clique para copiar
+                        </button>
+                        <p id="p2"></p>
+                    </div>
+                </div>
+                <div class="row p-3 mt-2">
+                    <div class="col-md">
+                        <h2>Editando o SRC de uma imagem</h2>
+                        <p>
+                            Nesta seção vamos editar o src da imagem de lampada, com JS.
+                        </p>
+                        <button class="btn btn-primary" onclick="ligar()">
+                            Ligar lampada
+                        </button>
+                        <img id="lamp" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function copiar(){
+            var x = document.getElementById('p1').innerHTML;
+            document.getElementById('p2').innerHTML = x;
+        }
+
+        function ligar(){
+            document.getElementById('lamp').src = "https://www.w3schools.com/js/pic_bulbon.gif"
+        }
+    </script>
+</body>
+
+</html>
