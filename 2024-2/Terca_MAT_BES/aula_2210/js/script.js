@@ -16,7 +16,6 @@ function mudaDisplay(){
     
 }
 
-
 function verMensagem(){
     window.alert("Esta é uma mensagem");
 }
