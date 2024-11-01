@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>JS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row"><!-- toda a página dentro desta linha-->
+            <div class="col-3"> <!-- coluna do menu-->
+                <h1>Introdução ao Javascript</h1>
+                <nav class="navbar">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sec1">Exibir data</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-9"><!-- Coluna de conteúdo-->
+                <div class="row">
+                    <div class="col">
+                        <h3>Primeiro JS</h3>
+                        <p>Exibe a hora quando o mouse passa sobre o botão</p>
+                        <button class="btn btn-danger" 
+                        onmouseover="document.getElementById('par').innerHTML = Date()">
+                            Veja a data e hora
+                        </button>
+                        <p id="par">Tem um texto AQUI</p>
+                    </div>
+                    <div class="col">
+                        <h3>Primeiro JS</h3>
+                        <p>Exibe a hora quando o mouse passa sobre o botão</p>
+                        <button class="btn btn-danger" 
+                        onmouseover="document.getElementById('par2').innerHTML = Date()"
+                        onmouseout="document.getElementById('par2').innerHTML = ''" >
+                            Veja a data e hora
+                        </button>
+                        <p id="par2"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-success" onclick="ligar()">
+                            Ligar
+                        </button>
+                        <img id="lamp" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

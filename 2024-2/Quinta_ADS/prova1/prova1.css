@@ -1,0 +1,17 @@
+*{
+    margin: 3% auto;
+    padding: 1%;
+}
+
+body{
+    background-color: #bbffb9;
+    text-align: center;
+}
+
+.rod{
+    border: solid gray;
+}
+
+footer{
+    background-color: burlywood;
+}
