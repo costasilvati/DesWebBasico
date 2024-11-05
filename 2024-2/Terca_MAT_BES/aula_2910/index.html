@@ -61,7 +61,7 @@
                 </p>
             </div>
         </div>
-        <div class="row">
+        <div class="row mb-3 p-5">
             <div class="col-8">
                 <!--<form>-->
                     <div class="mb-3">
@@ -76,7 +76,7 @@
                     <div class="mb-3">
                         <label for="feliz" class="form-label">Você é feliz?</label>
                         <div class="form-check form-check-inline">
-                            <input type="radio" name="f" id="f1" value="sim">
+                            <input type="radio" name="f" id="f1" value="sim" checked>
                             <label for="f">Sim</label>
                         </div>
                         <div class="form-check form-check-inline">
@@ -88,7 +88,39 @@
                             <label for="f">As vezes</label>
                         </div>
                     </div>
-                    <button class="btn btn-primary" onclick="verRadio()">
+                    <div class="mb-3">
+                        <label for="curso" class="form- ">Curso de Graduação</label>
+                        <select id="curso" class="form-select" aria-label="Curso">
+                            <option value="BES">Bacharelado em Engenharia de Software</option>
+                            <option value="ADS">An. e Desenvolvimento de Sistemas</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="c" class="form-label">Estilos Musicais</label>
+                        <div class="form-check">
+                            <input type="checkbox" name="p" id="s1" value="Pop" class="form-check-input">
+                            <label for="p" class="form-check-label">POP</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="r" id="s2" value="Rock" class="form-check-input">
+                            <label for="r" class="form-check-label">Rock</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="j" id="s3" value="Jazz" class="form-check-input">
+                            <label for="j" class="form-check-label">Jazz</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="c" id="s4" value="Clássico" class="form-check-input">
+                            <label for="c" class="form-check-label">Clássico</label>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-secondary" onclick="verCheckBox()">
+                        Ver estilos mucicais selecionados
+                    </button>
+                    <button class="btn btn-outline-dark" onclick="verSelect()">
+                        Ver dados da select
+                    </button>
+                    <button class="btn btn-primary" onclick="verRadio2()">
                         Exibir valores de radio
                     </button>
                     <!-- -->
@@ -101,6 +133,10 @@
                 <h2>Resultados Form</h2>
                 <p class="lead" id="result"></p>
                 <p class="lead" id="radios"></p>
+                <p class="lead" id="feliz"></p>
+                <p class="output lead"></p>
+                <p class="lead" id="check"></p>
+
             </div>
         </div>
     </div>
