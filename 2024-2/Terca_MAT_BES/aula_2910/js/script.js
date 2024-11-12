@@ -55,3 +55,14 @@ Feliz: xxxxx
 Curso: xxxx
 Estilo: xxxxx
 */
+
+// Escrever dados em arquivo
+
+function escreveArquivo(){
+    let jsonElement = { 
+        aa: 'aa',
+        test: 123,
+    };
+    //And save it to file
+    document.write('json_file.json', jsonElement);   
+}

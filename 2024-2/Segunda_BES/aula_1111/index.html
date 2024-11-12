@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS com form</title>
+</head>
+<body>
+    <div>
+        <div>
+            <p>Você é feliz?</p>
+            <input type="radio" name="f" id="f1" value="com certeza" checked>
+            <label for="f1">Sim</label>
+            <input type="radio" name="f" id="f2" value="não">
+            <label for="f2">Não</label>
+            <input type="radio" name="f" id="f3" value="as vezes">
+            <label for="f3">As vezes</label>
+            <p id="radios"></p>
+            <button onclick="verRadios()">Ver valores de radio</button>
+        </div>
+        <div>
+            <p>Escolha um plano de assinatura:</p>
+            <select name="assinatura" id="select1">
+                <option value="free">Free</option>
+                <option value="basic">Basic</option>
+                <option value="premium">Premium</option>
+            </select>
+            <p class="output"></p>
+            <button onclick="verSelect()">Ver select</button>
+        </div>
+        <div>
+            <p>Check Boxes - Prioridades</p>
+            <p>
+                <input type="checkbox" value="trabalho">
+                <label for="">Trabalho</label>
+            </p>
+            <p>
+                <input type="checkbox" value="estudos">
+                <label for="">Estudos</label>
+            </p>
+            <p>
+                <input type="checkbox" value="saúde">
+                <label for="">Saúde</label>
+            </p>
+            <p>Suas Prioridades são: <span id="checkboxes">...</span></p>
+            <button onclick="verChecks()">Ver checkboxes</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
