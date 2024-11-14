@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css">
+    <title>Add elements JS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col bg-secondary-subtle text-center p-3 mb-3">
+                <h1 class="display-2">Formulário com JS</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <!-- ELementos de form-->
+                <div class="row">
+                    <div class="col">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control mb-3" name="nome" id="n" 
+                        placeholder="Primeiro nome" aria-label="Primeiro nome">
+                    </div>
+                    <div class="col">
+                        <label for="snome" class="form-label">Sobrenome</label>
+                        <input type="text" class="form-control mb-3" name="snome" id="sn" 
+                        placeholder="Sobrenome" aria-label="Sobrenome">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="mail" class="form-label">E-mail</label>
+                        <input type="email" class="form-control mb-3" name="mail" id="e"
+                        placeholder="email@email.com" aria-label="email@email.com">
+                    </div>
+                </div>
+                <button class="btn btn-primary" onclick="salvar()">
+                    Salvar
+                </button>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-2"></div>
+            <div class="col-8 text-center">
+                <h1 class="mb-4">Usuários cadastrados</h1>
+                <table class="table table-hover">
+                    <!--<thead>-->
+                        <tr>
+                            <th class="scope">Id</th>
+                            <th class="scope">Nome</th>
+                            <th class="scope">E-mail</th>
+                        </tr>
+                    <!--</thead>-->
+                    <!--<tbody>-->
+                        <tr>
+                            <td>1 </td>
+                            <td>Juliana Costa</td>
+                            <td>juliana.silva@up.edu.br</td>
+                        </tr>
+                    <!--</tbody>-->
+                </table>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <script src="js/meuscript.js"></script>
+</body>
+</html>
