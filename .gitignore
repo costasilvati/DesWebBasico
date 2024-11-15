@@ -402,4 +402,4 @@ FodyWeavers.xsd
 *.sln.iml
 
 ._*
-bootstrap.*
+bootstrap.*/
