@@ -1,0 +1,20 @@
+.draggable {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    cursor: move;
+    position: absolute;
+}
+
+.dropzone {
+    width: 150px;
+    height: 150px;
+    border: 2px dashed #000;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 150px;
+}
