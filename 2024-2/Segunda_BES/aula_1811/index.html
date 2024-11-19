@@ -8,46 +8,46 @@
     <title>Add elements JS</title>
 </head>
 <body>
-    <div >
-        <div >
-            <div >
-                <h1 >Formulário com JS</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center bg-secondary-subtle p-4">
+                <h1 class="display-1">Formulário com JS</h1>
             </div>
         </div>
-        <div >
-            <div ></div> <!-- Div em branco esquerda-->
-            <div >
+        <div class="row mt-3">
+            <div class="col-2"></div> 
+            <div class="col-8 ">
                 <!-- ELementos de form-->
-                <div >
-                    <div >
-                        <label for="nome" >Nome</label>
-                        <input type="text"  
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text"  class="form-control" name="nome" id="n"
                         placeholder="Primeiro nome" aria-label="Primeiro nome">
                     </div>
-                    <div >
-                        <label for="snome" >Sobrenome</label>
-                        <input type="text"  
+                    <div class="col">
+                        <label for="snome" class="form-label">Sobrenome</label>
+                        <input type="text" class="form-control" name="snome" id="sn"
                         placeholder="Sobrenome" aria-label="Sobrenome">
                     </div>
                 </div>
-                <div >
+                <div class="row mb-3">
                     <div >
-                        <label for="mail" >E-mail</label>
-                        <input type="email" 
+                        <label for="mail" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" name="mail" id="e"
                         placeholder="email@email.com" aria-label="email@email.com">
                     </div>
                 </div>
-                <button >
+                <button class="btn btn-outline-primary" onclick="salvar()">
                     Salvar
                 </button>
             </div>
-            <div ></div>
+            <div class="col-2"></div>
         </div>
-        <div >
-            <div ></div> 
-            <div >
-                <h1 >Usuários cadastrados</h1>
-                <table >
+        <div class="row mt-4">
+            <div class="col-2"></div> 
+            <div class="col-8">
+                <h2 class="text-center">Usuários cadastrados</h2>
+                <table  class="table table-hover">
                     <thead>
                         <tr>
                             <th>Id</th>
