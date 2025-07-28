@@ -1,27 +1,31 @@
 --- 
-title: "A Minimal Book Example"
-author: "John Doe"
-date: "`r Sys.Date()`"
+title: "eBook: Desenvolviemtno Web Básico - Front-end"
+author: "Juliana Costa-Silva"
+date: "2025" #"`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
 # url: your book url like https://bookdown.org/yihui/bookdown
 # cover-image: path to the social sharing image like images/cover.jpg
 description: |
-  This is a minimal example of using the bookdown package to write a book.
-  The HTML output format for this example is bookdown::gitbook,
-  set in the _output.yml file.
+  Este livro foi desenvolvido para alunos de graduação em cursos de Tecnologia da Informação com base no conteúdo necessário para atividades de Desenvolvimento Web Básico e disciplinas que permeiam o tema.
 link-citations: yes
 github-repo: rstudio/bookdown-demo
+output: 
+  html_document: 
+    fig_caption: true
 ---
 
-# About
 
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
+# O material
 
-## Usage 
+Este material, apresentado em formato de livro é um _material de apoio_ do conteúdo envolvendo desenvolvimento de páginas Web, _front_-_end_, e foi desenvolvido utilizando R **Markdown**. Todos os conetúdos aqui expostos foram pensados para ajudar desenvolvedores iniciantes em HTML, CSS e Javascript. Porém também podem ser de grande ajuda para desenvolvedores experientes em busca de informações pontuais.
 
-Each **bookdown** chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter *must* start with a first-level heading: `# A good chapter`, and can contain one (and only one) first-level heading.
+A autora também recomenda o uso de pa'ginas oficiais de padrões de desenvolvimento Web, como [W3School](https://www.w3schools.com/) e [MDN Develepoers](https://developer.mozilla.org/).
+
+## Utilização 
+
+Cada capítulo deste **bookdown** 'chapter is ané um arquivo .Rmd, e cada arquivo .Rmd pode conter um (e somente um) capitulo. Um capítulo *deve* iniciar com um nível de cabeçalho `# Um bom capítulo`, e pode conter apenas (e apenas um) first-level heading.
 
 Use second-level and higher headings within chapters like: `## A short section` or `### An even shorter section`.
 
