@@ -1,0 +1,64 @@
+--- 
+title: "eBook: Desenvolviemtno Web Básico - Front-end"
+author: "Juliana Costa-Silva"
+date: "2025" #"`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+# url: your book url like https://bookdown.org/yihui/bookdown
+# cover-image: path to the social sharing image like images/cover.jpg
+description: |
+  Este livro foi desenvolvido para alunos de graduação em cursos de Tecnologia da Informação com base no conteúdo necessário para atividades de Desenvolvimento Web Básico e disciplinas que permeiam o tema.
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+output: 
+  html_document: 
+    fig_caption: true
+---
+
+
+# O material
+
+Este material, apresentado em formato de livro é um _material de apoio_ do conteúdo envolvendo desenvolvimento de páginas Web, _front_-_end_, e foi desenvolvido utilizando R **Markdown**. Todos os conetúdos aqui expostos foram pensados para ajudar desenvolvedores iniciantes em HTML, CSS e Javascript. Porém também podem ser de grande ajuda para desenvolvedores experientes em busca de informações pontuais.
+
+A autora também recomenda o uso de pa'ginas oficiais de padrões de desenvolvimento Web, como [W3School](https://www.w3schools.com/) e [MDN Develepoers](https://developer.mozilla.org/).
+
+## Utilização 
+
+Cada capítulo deste **bookdown** 'chapter is ané um arquivo .Rmd, e cada arquivo .Rmd pode conter um (e somente um) capitulo. Um capítulo *deve* iniciar com um nível de cabeçalho `# Um bom capítulo`, e pode conter apenas (e apenas um) first-level heading.
+
+Use second-level and higher headings within chapters like: `## A short section` or `### An even shorter section`.
+
+The `index.Rmd` file is required, and is also your first book chapter. It will be the homepage when you render the book.
+
+## Render book
+
+You can render the HTML version of this example book without changing anything:
+
+1. Find the **Build** pane in the RStudio IDE, and
+
+1. Click on **Build Book**, then select your output format, or select "All formats" if you'd like to use multiple formats from the same book source files.
+
+Or build the book from the R console:
+
+```{r, eval=FALSE}
+bookdown::render_book()
+```
+
+To render this example to PDF as a `bookdown::pdf_book`, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.org/tinytex/>.
+
+## Preview book
+
+As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in "Preview book", or from the R console:
+
+```{r eval=FALSE}
+bookdown::serve_book()
+```
+
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
