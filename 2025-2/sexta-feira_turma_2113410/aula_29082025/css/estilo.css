@@ -1,0 +1,14 @@
+body{
+    background-color: greenyellow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabela-simples{
+    background-color: antiquewhite;
+    padding: 3%;
+}
+
+td:hover{
+    background-color: black;
+    color: white;
+}

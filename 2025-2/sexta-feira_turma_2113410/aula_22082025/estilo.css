@@ -1,0 +1,39 @@
+/* Seletor de elementos */
+body {
+    background-color: rgb(205, 196, 196);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Seletor de id */
+#teste{
+    border-style: solid;
+}
+
+/*Seletor de classe */
+.bonitinho{
+    background-color: rgba(255, 99, 71, 1);
+}
+
+p{
+    color: black;
+}
+
+li{
+    background-color: burlywood;
+}
+
+li.active{
+    background-color: rgb(255,0,255);
+}
+
+.space{
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
