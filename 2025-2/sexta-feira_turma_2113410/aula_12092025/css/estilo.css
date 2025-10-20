@@ -1,0 +1,20 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    text-align: center;
+}
+
+.formulario{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-style: dashed;
+    padding: 1rem;
+    text-align: center;
+}
+
+input{
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+}

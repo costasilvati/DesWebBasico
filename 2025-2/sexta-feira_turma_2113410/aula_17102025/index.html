@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row"> <!-- linha 1 Menu-->
+            <div class="col-md">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#sec1">Sintaxe JS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#sec2">???</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Ações JS
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Mudar source de IMG</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div> 
+        <div class="row mt-5">
+            <div class="col-md-3 bg-light"></div>
+            <div class="col-md-9 p-3">
+                <h1>Introdução ao JS</h1>
+                <section id="sec1">
+                    <h2>Sintaxe JS</h2>
+                    <p id="demo"></p>
+                    <button class="btn btn-primary" 
+                    onclick="document.getElementById('demo').innerHTML = Date()">
+                        Clique AQUI para ver data e hora do sistema
+                    </button>
+                    <h2>Ações ao passar o mouse</h2>
+                    <p id="nome"></p>
+                    <button class="btn btn-success" onmouseover="exibir()" 
+                    onmouseout="ocultar()" >
+                        Passe o mouse para ver o nome
+                    </button>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="js/meuscript.js"></script>
+</body>
+
+</html>

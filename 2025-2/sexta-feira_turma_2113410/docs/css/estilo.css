@@ -1,0 +1,41 @@
+/* Seletor de elementos*/
+body{
+    background-color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Seletor de classe */
+.cabecalho{
+    margin-top: 2rem;
+    padding: 0.6rem;
+    display: flex;
+    flex-direction: row;
+}
+/* Seletor de id */
+#nome{
+    font-size:3rem;
+    text-align: center;
+}
+
+.photo{
+    width: 10rem;
+    border-radius: 10rem;
+}
+.nome-sub{
+    margin: 0rem 3rem 0rem 3rem;
+    width: 70%;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+}
+
+.menu{
+    width: 30%;
+    background-color: rgb(200, 200, 200);
+}
+
+.conteudo{
+    width: 70%;
+    padding: 2rem;
+}
